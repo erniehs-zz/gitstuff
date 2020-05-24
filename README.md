@@ -25,3 +25,15 @@ eval $(ssh-agent -s)
 
 ssh-add ~/.ssh/id_rsa
 ```
+
+## reset origin
+
+https://help.github.com/en/github/using-git/changing-a-remotes-url
+
+```shell
+git remote remove origin
+
+git remote add origin https://github.com/erniehs/boats.git
+
+git push --set-upstream origin master
+```
